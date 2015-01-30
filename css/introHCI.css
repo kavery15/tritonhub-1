@@ -1,0 +1,38 @@
+
+.example-class-selector {
+	margin-top: 2em;
+}
+
+
+.example-class-selector p {	
+	color: #CC00AA;
+}
+
+body {
+     border: 1px dotted gray;
+     padding: 20px;
+
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/TritonStatue.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+.project a {
+     text-align: center;
+}
