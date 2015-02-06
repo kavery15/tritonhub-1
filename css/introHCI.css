@@ -36,3 +36,24 @@ body {
 .project a {
      text-align: center;
 }
+
+
+.container {
+ position: relative;
+ height: auto;
+ width: 900px;
+ margin: 0 auto;
+}
+
+.container img {
+    height: 300px ;
+    width: auto;
+}
+.icon-block {
+    text-align: left !important;
+}
+
+.icon-text {
+    text-align: left !important;
+    display: inline;
+}
