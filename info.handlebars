@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Info</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/introHCI.css" rel="stylesheet">
+
+	      
+</head>
+
+<body>
+	<div style = 'text-align:right'>
+		<h5>Search	&middot	Help &middot	Contact Us &middot <b>Welcome, Kate!</b></h5>
+	</div>
+	<div style = 'text-align:center'>
+		<div class= "jumbotron">
+			<a href = "home.html" class= "jumbotron">
+			<h1>Triton Hub</h1>
+			<p>Getting Involved Made Easy!</p>
+		</a>
+	</div>
+		
+	
+		
+	<div id="id01"></div>	
+	<script>
+		function myFunction(arr) {
+			var out = "";
+			var i;
+			for (i=0; i<arr.length;i++) {
+				out += '<a href =" ' + arr[i].URL + '">' + arr[i].name + '</a><br>';
+			}
+			document.getElementById("id01").innerHTML = out;
+		}
+	</script>
+
+
+
+	
+
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="data.js"></script>
+
+</body>
+</html>
