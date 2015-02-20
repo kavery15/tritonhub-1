@@ -9,6 +9,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/introHCI.css" rel="stylesheet">
+
 	      
 </head>
 
@@ -19,8 +20,17 @@
 	 <div style = 'text-align:center'>
 		
 		<div class="jumbotron">
+			<a href = "home.html" class= "jumbotron">
 			<h1>Triton Hub</h1>
 			<p>Getting Involved Made Easy!</p>
 		</div>
+		
+	</div>
+		
+		{{#each data}}
+		<div>
+			<p>{{name}}</p>
+		</div>
+		{{/each}}
 </body>
 </html>
