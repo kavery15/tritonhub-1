@@ -1,0 +1,244 @@
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: "Bank Gothic Medium", Georgia;
+  src: url('fonts/bankgthd.ttf');
+  width: calc(100%/6);
+}
+
+
+#cssmenu {
+  width: 100%;
+  height: 59px;
+  padding-bottom: 4px;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+  border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one {
+  height: 10px;
+  background: #0f71ba;
+}
+#cssmenu #bg-two {
+  height: 59px;
+  z-index: 2;
+  background: url('images/bg.png');
+}
+#cssmenu #bg-three {
+  bottom: 4px;
+  height: 55px;
+  z-index: 3;
+  background: #222222;
+  background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+  background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+  bottom: 4px;
+  height: 55px;
+  z-index: 4;
+  background: url('images/bg.png');
+}
+#cssmenu ul {
+  height: 59px;
+  width: auto;
+}
+#cssmenu ul li {
+  float: left;
+  margin-right: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  z-index: 5;
+}
+#cssmenu ul li a {
+  padding: 24px 30px 20px 30px;
+  margin-bottom: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #eeeeee;
+  font-size: 15px;
+  text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+  border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+  background: #0f71ba;
+  background: -moz-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3fa4f0), color-stop(100%, #0f71ba));
+  background: -webkit-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -o-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -ms-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: linear-gradient(to bottom, #3fa4f0 0%, #0f71ba 100%);
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+  background: url('images/bg.png');
+  color: #ffffff;
+}
+
+.example-class-selector {
+	margin-top: 2em;
+}
+
+
+.example-class-selector p {	
+	color: #CC00AA;
+}
+
+body {
+     border: 1px dotted gray;
+     padding: 20px;
+
+}
+
+
+
+.club a {
+     text-align: center;
+}
+
+
+.container {
+ position: relative;
+ height: auto;
+ width: 900px;
+ margin: 0 auto;
+}
+
+.container img {
+    height: 300px ;
+    width: auto;
+}
+.icon-block {
+    text-align: left !important;
+}
+
+.icon-text {
+    text-align: left !important;
+    display: inline;
+}
+
+.logo {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.logo:after {
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1; 
+}
+
+
+.loginform ul {  
+    padding: 0;  
+    margin: 0;  
+}  
+.loginform li {  
+    display: inline;  
+    float: center;  
+}  
+
+label {  
+    display: block;  
+    color: #999;  
+}  
+.cf:before,  
+.cf:after {  
+    content: "";   
+    display: table;  
+}  
+  
+.cf:after {  
+    clear: both;  
+}  
+.cf {  
+    *zoom: 1;  
+}  
+:focus {  
+    outline: 0;  
+}  
+
+.loginform input:not([type=submit]) {  
+    padding: 5px;  
+    margin-right: 10px;  
+    border: 1px solid rgba(0, 0, 0, 0.3);  
+    border-radius: 3px;  
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1),   
+                0px 1px 0px 0px rgba(250, 250, 250, 0.5) ;
+}
+
+.loginform input[type=submit] {  
+    border: 1px solid rgba(0, 0, 0, 0.3);  
+    background: #64c8ef; /* Old browsers */  
+    background: -moz-linear-gradient(top,  #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */  
+    background: -webkit-gradient(linear, left top, left bottombottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */  
+    background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */  
+    background: -o-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */  
+    background: -ms-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* IE10+ */  
+    background: linear-gradient(to bottombottom,  #64c8ef 0%,#00a2e2 100%); /* W3C */  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */  
+    color: #fff;  
+    padding: 5px 15px;  
+    margin-right: 0;  
+    margin-top: 15px;  
+    border-radius: 3px;  
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);  
+}  
+
+
+
+.btn-custom {
+  background-color: hsl(241, 100%, 33%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0200a8", endColorstr="#0200a8");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#0200a8), to(#0200a8));
+  background-image: -moz-linear-gradient(top, #0200a8, #0200a8);
+  background-image: -ms-linear-gradient(top, #0200a8, #0200a8);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0200a8), color-stop(100%, #0200a8));
+  background-image: -webkit-linear-gradient(top, #0200a8, #0200a8);
+  background-image: -o-linear-gradient(top, #0200a8, #0200a8);
+  background-image: linear-gradient(#0200a8, #0200a8);
+  border-color: #0200a8 #0200a8 hsl(241, 100%, 33%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00);
+  webkit-font-smoothing: antialiased;
+}
