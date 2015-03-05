@@ -17,11 +17,12 @@
 <body>
 	<div id='cssmenu'>
 			<ul>
-   				<li class='active'><a href='home.html'><span>Home</span></a></li>
-  				<li><a href='#'><span>Search</span></a></li>
-   				<li><a href='#'><span>About</span></a></li>
-   				<li class='last'><a href='#'><span>Contact</span></a></li>
-   				<li><a href='profile.html'><span>Profile</span></a></li>
+   				<li><a href='home.html'><span>Home</span></a></li>
+  				<li><a href='matchSecond.html'><span>Match</span></a></li>
+   				<li class='active'><a href='info'><span>Info</span></a></li>
+   				<li><a href='myclubs.html'><span>Clubs</span></a></li>
+   				<li class='last'><a href='currentevents.html'><span>Events</span></a></li>
+   				<li><a href='index.html'><span>Profile</span></a></li>
 			</ul>
 		</div>
 	 <div style = 'text-align:center'>
@@ -31,12 +32,7 @@
 		</div>
 	</div>
 
-	<div id="id01"></div>	
-	<script>
-		function myFunction(arr) {
-			document.getElementById("id01").innerHTML = "<div style = 'text-align:center'><b>" + arr[0].name + "</b>" + "<br>" + arr[0].description + "<br>" + '<a href="' + arr[0].website + '">' + "Club Website" + '</a><br>' + " President: " + arr[0].president + "<br>" + "Vice President: " + arr[0].vp + "<br>" + '<img src ="' + arr[0].imageURL + '"style="width: 100%">' + "</div>"
-		}
-	</script>
+	
 	<br>
 	<center><button class = "btn-custom">Add to Clubs!<a href="myclubs.html"></a></button></center>
 
