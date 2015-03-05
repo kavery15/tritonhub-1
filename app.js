@@ -41,7 +41,7 @@ if ('development' == app.get('env')) {
 
 app.get('/info', index.populate);
 app.get('/match', index.findMatch);
-
+app.get('/home', index.view);
 
 
 
