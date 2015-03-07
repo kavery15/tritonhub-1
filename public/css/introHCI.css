@@ -152,6 +152,11 @@
     height: 300px ;
     width: auto;
 }
+
+.img {
+  height: auto;
+  width: auto;
+}
 .icon-block {
     text-align: left !important;
 }
