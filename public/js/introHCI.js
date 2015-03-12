@@ -9,16 +9,28 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// add any functionality and listeners you want here
+  $("button").click(addClubDetails);
+}
 
-  $(".version_a").click(function(){
-    //add your Woopra tracking code for version A's like button click event
-     woopra.track("a_version_match_click"); 
-  })
-
-  $(".version_b").click(function(){
-    //add your Woopra tracking code for version A's like button click event
-     woopra.track("b_version_match_click"); 
-  })
+/*
+ * Make an AJAX call to retrieve project details and add it in
+ */
+ function addClub(result) {
+  var clubHTML = /*'<a href="#" class="thumbnail">' */ +
+    '<img src="' + result['imageURL'] + '" class="img">' +
+    '<p>' + result['name'];
+    console.log(result);
+    var club= $('#clubs'+result.id);
+    club.find('.details').html(clubHTML);
 
 }
+ /*$("#testjs").click(function(e)){
+ $.get("/project/random", addproject );
+}*/
+function addClubDetails(e) {
+
+  // Prevent following the link
+  e.preventDefault();
+  $.getJSON("data.json");
+}
+  

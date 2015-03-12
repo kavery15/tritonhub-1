@@ -20,7 +20,7 @@
    				<li><a href='home'><span>Home</span></a></li>
   				<li><a href='matchSecond.html'><span>Match</span></a></li>
    				<li class='active'><a href='info'><span>Info</span></a></li>
-   				<li><a href='myclubs.html'><span>Clubs</span></a></li>
+   				<li><a href='my'><span>Clubs</span></a></li>
    				<li class='last'><a href='currentevents.html'><span>Events</span></a></li>
    				<li><a href='index.html'><span>Profile</span></a></li>
 			</ul>
@@ -37,19 +37,19 @@
 			Vice President: {{clubs.0.vp}}
 			<br>
 			<br>
-		<a href="{{clubs.0.website}}"> Acamazing's Website </a>
+		<a href="{{clubs.0.website}}"> Acamazing Website </a>
 		<br>
         <br>  
-        <img src="{{clubs.0.imageURL}}" alt="Acamazing" class="img">
+        <img src="{{clubs.0.imageURL}}" alt="Acamazing" class="img" height = "auto" style = "width: 100%"/>
 	</div>
 
+	<br><center>
+		<FORM><INPUT class="btn btn-custom" Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM></center>
 	
-	<center><button class = "btn-custom">Add to Clubs!</button></center>
-	<br>
 
 <script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="data.js"></script>
+	
 
 </body>
 </html>

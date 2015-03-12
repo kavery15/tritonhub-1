@@ -2,9 +2,9 @@
 
 <html>
 <head>
-	<title>Info</title>	
+	<title>Home Page</title>	
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -25,34 +25,31 @@
    				<li><a href='index.html'><span>Profile</span></a></li>
 			</ul>
 		</div>
-	<div style = 'text-align:center'>
-     <div class = "logo">
+	 <div style = 'text-align:center'>
+		
+		<div class = "logo">
 		<img src="images/icons/banner.png" height = "auto" style="width: 100%"/>
+		</div>
+		<h1>{{clubs.5.name}}<h1>
+			<h3>About<h3>
+		<h4>{{clubs.5.description}}<h4>
+			<h4>President: {{clubs.5.president}}<h4>
+			Vice President: {{clubs.5.vp}}
+			<br>
+			<br>
+		<a href="{{clubs.5.website}}"> {{clubs.5.name}} Website </a>
+		<br>
+        <br>  
+        <img src="{{clubs.5.imageURL}}" alt="Acamazing" class="img" height = "auto" style = "width: 100%"/>
 	</div>
-	<h3>
-	<ul style = "list-style-type: none;">
-	{{#each clubs}}
-      <li><a href="{{URL}}">{{name}}</a></li>
-    {{/each}}
-    </ul>
-    <h3>
 
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		
-		
-	
-		
+	<br><center>
+		<FORM><INPUT class="btn btn-custom" Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM></center>
 	
 
-
-
-	
-    <script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
+	
 
 </body>
 </html>

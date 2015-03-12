@@ -8,7 +8,6 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-
 // Example route
 // var user = require('./routes/user');
 
@@ -43,8 +42,13 @@ app.get('/info', index.populate);
 app.get('/match', index.findMatch);
 app.get('/home', index.view);
 app.get('/club', index.showAll);
-
-
+app.get('/club2', index.showInfo);
+app.get('/club3', index.showData);
+app.get('/club4', index.showClub);
+app.get('/club5', index.showClubs);
+app.get('/club6', index.showEvery);
+app.get('/my', index.allEvents);
+app.get('/add', index.addClub);
 
 // Example route
 // app.get('/users', user.list);
