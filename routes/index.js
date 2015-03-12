@@ -56,6 +56,7 @@ exports.showEvery = function(req, res){
 }
 
 exports.addClub = function(req, res) {    
+
 	var newClub = {
     	"name": req.query.name,
     	"description": req.query.description,
@@ -68,5 +69,7 @@ exports.addClub = function(req, res) { 
     data["clubs"].push(newClub);
     console.log(data);
     res.render('add', data);
+    
 
     }
+
